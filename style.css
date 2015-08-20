@@ -15,6 +15,7 @@ body {
     content: "";
     position: absolute;
     top: 0;
+    z-index: -1;
 }
 
 .heart:before, .heart:after {
@@ -30,6 +31,11 @@ body {
     inset 20px -195px 65px 0 #640d0d;
     -webkit-transform: rotate(-45deg);
 }
+
+.heart:before {
+    box-shadow: -10px 1px 15px 0 rgba(0,0,0,0.2), inset 20px -195px 65px 0 #640d0d, inset -2px 2px 0 rgba(255,255,255,.75), inset -5px 20px 0 rgba(255,255,255,.35), inset -5px 20px 10px rgba(255,255,255,.25);
+}
+
 .heart:after{
     left: 64px;
     background-color: #640d0d;
